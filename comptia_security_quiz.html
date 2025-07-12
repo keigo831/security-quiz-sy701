@@ -4759,16 +4759,18 @@
 
 <div class="question-card">
     <div class="english-question">
-        Question #358<br><br>A security analyst is reviewing logs and discovers the following:<br><br>[Image showing: log entry containing User-Agent: ${/bin/sh id}]<br><br>Which of the following should be used to best mitigate this type of attack?<br><br>A. Input sanitization<br><br>B. Secure cookies<br><br>C. Static code analysis<br><br>D. Sandboxing
+        Question #358<br><br>A security analyst is reviewing logs and discovers the following:<br><br>
+        <img src="image/Question358.png" alt="Log entry showing User-Agent: ${/bin/sh id}." style="max-width: 100%; height: auto;"><br><br>
+        Which of the following should be used to best mitigate this type of attack?<br><br>A. Input sanitization<br><br>B. Secure cookies<br><br>C. Static code analysis<br><br>D. Sandboxing
     </div>
     <button onclick="toggleAnswer(this)">顯示答案</button>
     <div class="chinese-answer hidden">
-        <p><strong>中文說明：</strong>一位安全分析師正在審查日誌，並發現以下內容：</p>
+        <p><strong>中文說明：：</strong>一位安全分析師正在審查日誌，並發現以下內容：</p>
         <p><strong>[圖片顯示：日誌條目包含 User-Agent: ${/bin/sh id}]</strong></p>
         <p>以下哪項應該用於最佳緩解這種類型的攻擊？</p>
-        <p><strong>關鍵字：</strong>日誌審查 (Reviewing logs)、User-Agent、${/bin/sh id}</p>
-        <p><strong>正確答案：</strong>A. Input sanitization (輸入淨化)</p>
-        <p><strong>重點說明：</strong>日誌中的 User-Agent: ${/bin/sh id} 是一個典型的命令注入 (Command Injection) 嘗試。攻擊者試圖在通常不執行命令的輸入字段（如 HTTP 頭部的 User-Agent）中注入惡意命令。要緩解這種類型的攻擊，最有效的方法是實施嚴格的輸入淨化 (Input sanitization)，確保所有使用者輸入在被應用程式處理之前，都經過檢查、過濾或編碼，以移除或中和潛在的惡意字元或命令。</p>
+        <p><strong>關鍵字：：</strong>日誌審查 (Reviewing logs)、User-Agent (User-Agent)、命令注入 (Command Injection)</p>
+        <p><strong>正確答案：：</strong>A. Input sanitization (輸入淨化)</p>
+        <p><strong>重點說明：：</strong>日誌中的 <code>User-Agent: ${/bin/sh id}</code> 是一個典型的<strong>命令注入 (Command Injection)</strong> 嘗試。攻擊者試圖在通常不執行命令的輸入字段（如 HTTP 頭部的 User-Agent）中注入惡意命令。要緩解這種類型的攻擊，最有效的方法是實施嚴格的<strong>輸入淨化 (Input sanitization)</strong>，確保所有使用者輸入在被應用程式處理之前，都經過檢查、過濾或編碼，以移除或中和潛在的惡意字元或命令。</p>
     </div>
 </div>
 
